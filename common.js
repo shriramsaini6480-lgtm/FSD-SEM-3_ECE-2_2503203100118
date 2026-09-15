@@ -1,20 +1,11 @@
-function greet(){
-console.log("hello");
-}
-greet();
-function areaOfCircle(radius){
-    let area = 3.14*radius*radius;
-    console.log("area of circle is :",area);
+export function greet() {
+  console.log("Hello from common.js");
 }
 
-areaOfCircle(5);
-
-function circumference(radius){
-    let circum = 2*3.14*radius;
-    console.log("circumference of circle is :",circum);
+export function circumference(radius) {
+  console.log("Circumference:", 2 * Math.PI * radius);
 }
 
-circumference(5);
-
-module.exports = {greet,areaOfCircle,circumference};
-export default {areaOfCircle};
+export function areaOfCircle(radius) {
+  console.log("Area:", Math.PI * radius * radius);
+}
